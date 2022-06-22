@@ -1,9 +1,14 @@
+/*###################### ROOT #######################*/
+
 :root {
-  --primary-color: #0A1128;
-  --white-color: #FFFFFF;
-  --light-gray-color: #EEEEEE;
+  --primary-color: #0a1128;
+  --white-color: #ffffff;
+  --light-gray-color: #eeeeee;
   --gap: 3rem;
+  --secondary-color: crimson;
 }
+
+/*###################### GERAL #######################*/
 
 * {
   margin: 0;
@@ -17,7 +22,12 @@ body {
   font-size: 2rem;
   color: var(--primary-color);
 }
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: 'Montserrat', sans-serif;
 }
 h1 {
@@ -48,33 +58,42 @@ a {
   text-decoration: none;
 }
 
-.main-bg {
-  background-image: url('../img/main-bg.svg');
-  background-size: cover;
-  background-position: center center;
-  color: var(--white-color);
-}
 .white-bg {
   background: var(--white-color);
-}
-.main-content {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: var(--gap);
 }
 
 .section {
   min-height: 100vh;
 }
 
+.main-bg {
+  background-image: url('../img/main-bg.svg');
+  background-size: cover;
+  background-position: center center;
+  color: var(--white-color);
+}
+
+.main-content {
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: var(--gap);
+}
+
+.spacing {
+  height: 6.5rem;
+}
+
+/*###################### MENU #######################*/
+
 .menu {
-  background-color: var(--white-color);
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
+  z-index: 1;
   width: 100%;
   border-bottom: 1px solid var(--light-gray-color);
+  
 }
 .menu h1 {
   font-size: 2.3rem;
@@ -103,13 +122,13 @@ a {
 }
 
 .menu ul li a::after {
-  content: "";
+  content: '';
   position: absolute;
   bottom: 1rem;
   left: 50%;
   width: 0%;
   height: 0.2rem;
-  background: crimson;
+  background: var(--secondary-color);
   transition: all 300ms ease-in-out;
 }
 
@@ -119,5 +138,41 @@ a {
   align-items: center;
   padding-top: 0;
   padding-bottom: 0;
-  border-bottom: 1px var(--light-gray-color);
+  border-bottom: 0.1rem var(--light-gray-color);
+}
+
+/*###################### INTRO #######################*/
+
+.intro-content {
+  display: grid;
+  position: relative;
+  top: -7rem;
+  grid-template-columns: 1fr 1.5fr;
+  gap: var(--gap);
+  height: 100vh;
+}
+
+.header-content, .header-img {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+
+.header-content h2 {
+  font-size: 6rem;
+  margin-bottom: 5rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif
+  ;
+}
+
+.header-content p {
+  font-size: 2.3rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif
+  ;
+}
+
+.header-img {
+  max-width: 100vw;
+  height: auto;
 }
