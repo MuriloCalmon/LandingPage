@@ -14,14 +14,22 @@
     />
   </head>
   <body class="main-bg">
+    <input
+      id="close-menu"
+      class="close-menu"
+      type="checkbox"
+      aria-label="Close menu"
+      role="button"
+    />
+    <label for="close-menu" class="close-menu-label" title="Close menu"></label>
     <aside class="menu white-bg">
       <div class="main-content menu-content">
-        <h1>
+        <h1 onclick="getElementById('close-menu').checked = false;">
           <a href="#home">LOGO</a>
         </h1>
 
         <nav>
-          <ul>
+          <ul onclick="getElementById('close-menu').checked = false;">
             <li><a href="#intro">intro</a></li>
             <li><a href="#top3">top3</a></li>
             <li><a href="#gallery">gallery</a></li>
@@ -118,22 +126,40 @@
         <p class="grid-description">Uma breve descrição</p>
         <div class="grid">
           <div class="gallery-img">
-            <img src="https://source.unsplash.com/random?r=123123123" alt="Random image from unsplash">
+            <img
+              src="https://source.unsplash.com/random?r=123123123"
+              alt="Random image from unsplash"
+            />
           </div>
           <div class="gallery-img">
-            <img src="https://source.unsplash.com/random?r=15344" alt="Random image from unsplash">
+            <img
+              src="https://source.unsplash.com/random?r=15344"
+              alt="Random image from unsplash"
+            />
           </div>
           <div class="gallery-img">
-            <img src="https://source.unsplash.com/random/?r=1021687" alt="Random image from unsplash">
+            <img
+              src="https://source.unsplash.com/random/?r=1021687"
+              alt="Random image from unsplash"
+            />
           </div>
           <div class="gallery-img">
-            <img src="https://source.unsplash.com/random?r=40674" alt="Random image from unsplash">
+            <img
+              src="https://source.unsplash.com/random?r=40674"
+              alt="Random image from unsplash"
+            />
           </div>
           <div class="gallery-img">
-            <img src="https://source.unsplash.com/random?r=302567" alt="Random image from unsplash">
+            <img
+              src="https://source.unsplash.com/random?r=302567"
+              alt="Random image from unsplash"
+            />
           </div>
           <div class="gallery-img">
-            <img src="https://source.unsplash.com/random?r=20123689" alt="Random image from unsplash">
+            <img
+              src="https://source.unsplash.com/random?r=20123689"
+              alt="Random image from unsplash"
+            />
           </div>
         </div>
       </div>
@@ -191,57 +217,67 @@
         </p>
 
         <div class="responsive-table">
-        <table>
-          <caption>Pricing table</caption>
-          <thead>
-            <tr>
-              <th>Title 1</th>
-              <th>Title 2</th>
-              <th>Title 3</th>
-              <th>Title 4</th>
-              <th>Title 5</th>
-            </tr>
-          </thead>
+          <table>
+            <caption>
+              Pricing table
+            </caption>
+            <thead>
+              <tr>
+                <th>Title 1</th>
+                <th>Title 2</th>
+                <th>Title 3</th>
+                <th>Title 4</th>
+                <th>Title 5</th>
+              </tr>
+            </thead>
 
-          <tbody>
-            <tr>
-              <td>Content 1</td>
-              <td>Content 2</td>
-              <td>Content 3</td>
-              <td>Content 4</td>
-              <td>Content 5</td>
-            </tr>
-            <tr>
-              <td>Content 1</td>
-              <td>Content 2</td>
-              <td>Content 3</td>
-              <td>Content 4</td>
-              <td>Content 5</td>
-            </tr>
-            <tr>
-              <td>Content 1</td>
-              <td>Content 2</td>
-              <td>Content 3</td>
-              <td>Content 4</td>
-              <td>Content 5</td>
-            </tr>
-          </tbody>
-          <tfoot>
-            <tr>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td>fotter</td>
-            </tr>
-          </tfoot>
-        </table>
-      </div>
+            <tbody>
+              <tr>
+                <td>Content 1</td>
+                <td>Content 2</td>
+                <td>Content 3</td>
+                <td>Content 4</td>
+                <td>Content 5</td>
+              </tr>
+              <tr>
+                <td>Content 1</td>
+                <td>Content 2</td>
+                <td>Content 3</td>
+                <td>Content 4</td>
+                <td>Content 5</td>
+              </tr>
+              <tr>
+                <td>Content 1</td>
+                <td>Content 2</td>
+                <td>Content 3</td>
+                <td>Content 4</td>
+                <td>Content 5</td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>fotter</td>
+              </tr>
+            </tfoot>
+          </table>
+        </div>
       </div>
     </section>
 
     <footer class="main-bg footer">
-      <p>Feito por <a target="_blank" rel="nofollow" href="https://github.com/MuriloCalmon">Muca</a> 😜</p>
+      <p>
+        Feito por
+        <a target="_blank" rel="nofollow" href="https://github.com/MuriloCalmon"
+          >Muca</a
+        >
+        😜
+      </p>
     </footer>
+
+    <a class="back-to-top" href="#home">➤</a>
   </body>
 </html>
